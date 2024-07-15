@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { PatientForm } from "@/components/forms/PatientForm";
 import { PasskeyModal } from "@/components/PasskeyModal";
-import { Button } from "@/components/ui/button";
+
 
 const Home = ({ searchParams }: SearchParamProps) => {
   const isAdmin = searchParams?.admin === "true";
@@ -22,7 +22,6 @@ const Home = ({ searchParams }: SearchParamProps) => {
             className="mb-12 h-10 w-fit"
             
           />
-          <Button className="">Back</Button>
           <PatientForm />
 
           <div className="text-14-regular mt-20 flex justify-between">
